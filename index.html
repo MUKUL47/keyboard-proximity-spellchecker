@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spell Checker</title>
+  </head>
+  <script type="module" src="./dist/index.js"></script>
+  <style>
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: sticky;
+      top: 5px;
+    }
+  </style>
+  <body>
+    <center><h1>Trie Spell Checker</h1></center>
+    <div class="flex">
+      <input
+        style="padding: 5px; font-size: 1rem"
+        type="text"
+        id="inputField"
+        placeholder="Enter a sentence"
+      />
+      <button id="suggestButton">Get Suggestions</button>
+    </div>
+    <textarea
+      id="suggestionsInput"
+      disabled
+      style="width: 100%; height: 1000px"
+    ></textarea>
+  </body>
+</html>
